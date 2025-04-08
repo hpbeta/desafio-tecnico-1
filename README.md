@@ -50,11 +50,11 @@ Você pode visualizar o projeto localmente de forma bem simples:
 
 ## 📸 Preview
 
-Desktop 
- `./src/assets/desktop.gif`
+**Desktop**  
+<img src="./src/assets/desktop.gif" alt="Preview Desktop" width="100%" />
 
- Mobile 
- `./src/assets/mobile.gif`
+**Mobile**  
+<img src="./src/assets/mobile.gif" alt="Preview Mobile" width="100%" />
 
 ---
 

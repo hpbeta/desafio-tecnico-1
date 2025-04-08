@@ -1,7 +1,21 @@
-import { products } from "./products.js";
+import { products } from "../src/products.js";
 
 const search = document.querySelector(".search-icon");
+const btnCarrossel = document.querySelectorAll(".button-carrossel")
+const hamburguerMenu = document.querySelector(".hamburger-menu")
 
+hamburguerMenu.addEventListener("click", () => {
+  
+  const containerDepartament = document.querySelector(".container-departament")
+    containerDepartament.classList.toggle("active")
+
+    if (containerDepartament.classList.contains("active")) {
+      document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    } else {
+      document.body.style.backgroundColor = "";
+    }
+ 
+})
 
 search.addEventListener("click", () => {
   const inputValue = document.getElementById("search-input").value;
@@ -72,4 +86,19 @@ document.querySelectorAll(".carousel-container").forEach((container) => {
 
   renderProducts();
 });
+
+btnCarrossel.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+
+    btn.classList.toggle("rotated")
+    
+    const itemCarrossel = document.querySelectorAll(".item-carrossel")
+
+    itemCarrossel.forEach((el, i)  => {
+      if(index === i ) {
+        el.classList.toggle("hidden")
+      }
+    }) 
+  })
+})
 

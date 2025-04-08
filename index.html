@@ -47,10 +47,12 @@
           </div>
         </nav>
 
-        <nav class="container-departament">
-          <p class="hamburger-menu">
-            <i class="fas fa-bars"></i> Todas as categorias
-          </p>
+        
+        <p class="hamburger-menu">
+          <i class="fas fa-bars"></i> Todas as categorias
+        </p>
+        <nav class="container-departament ">
+          
           <div class="departament-links">
             <a href="#">Departamento</a>
             <a href="#">Departamento</a>
@@ -225,9 +227,12 @@
 
         <div class="acordeon-section">
           <div class="footer">
-            <h5>Institucional</h5>
+            <div class="container-carrossel">
+              <h5>Institucional</h5>
+            <button class="button-carrossel">&#x25BC;</button>
+            </div>
 
-            <ul>
+            <ul class="item-carrossel hidden">
               <li><a href="#">Sobre Nós</a></li>
               <li><a href="#">Nossas Lojas</a></li>
               <li><a href="#">Privacidade e Segurança</a></li>
@@ -236,9 +241,12 @@
           </div>
 
           <div class="footer">
-            <h5>Central de ajuda</h5>
+            <div class="container-carrossel">
+              <h5>Central de ajuda</h5>
+            <button class="button-carrossel">&#x25BC;</button>
+            </div>
 
-            <ul>
+            <ul class="item-carrossel hidden">
               <li><a href="#">Fale Conosco</a></li>
               <li><a href="#">Frete e Entrega</a></li>
               <li><a href="#">Trocas e Devoluções</a></li>
@@ -248,10 +256,13 @@
           </div>
 
           <div class="footer">
-            <h5>Atendimento</h5>
+            <div class="container-carrossel">
+              <h5>Atendimento</h5>
+            <button class="button-carrossel">&#x25BC;</button>
+            </div>
 
-            <div>
-              <p>Telefone: (00) 1234-5678</p>
+            <div class="item-carrossel hidden">
+              <p >Telefone: (00) 1234-5678</p>
               <p><span>E-mail: </span>exemplo@exemplo.com.br</p>
               <h6>Horário de atendimento</h6>
               <p>Segunda a Sábado: 07h00 às 23h00</p>
@@ -293,6 +304,6 @@
       </div>
     </section>
 
-    <script type="module" src="index.js"></script>
+    <script type="module" src="./src/index.js"></script>
   </body>
 </html>

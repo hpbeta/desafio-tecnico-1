@@ -107,6 +107,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    display: none;
   }
 
   .container-main {
@@ -558,3 +559,19 @@
   width: 100%;
   margin-left: 300px;
  }
+
+ .container-carrossel {
+  display: flex;
+  gap: 5px;
+  
+ }
+
+ .button-carrossel {
+  border: none;
+  height: 20px;
+ }
+
+ .button-carrossel.rotated {
+  transform: rotate(-90deg);
+ }
+

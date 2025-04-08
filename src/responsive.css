@@ -152,5 +152,50 @@
     gap: 25px;
   }
 
+.acordeon-section {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  .item-carrossel.hidden {
+    display: none;
+  }
+
+  .container-carrossel {
+    justify-content: space-between;
+  }
+
+  .container-departament {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    transform: translatey(100%); 
+  }
+
+  .container-departament.active {
+    transform: translatey(0); 
+  }
+
+  .departament-links {
+    flex-direction: column;
+    margin-top: -550px;
+   
+    
+  a {
+    margin-bottom: 20px;
+  }
+  }
+
+  .hamburger-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
    
 }

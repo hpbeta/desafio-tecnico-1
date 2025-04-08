@@ -197,3 +197,13 @@
     cursor: pointer;
   }
 }
+
+@media(max-width: 375px) {
+  .hamburger-menu {
+    top: 80px;
+  }
+
+  .departament-links {
+    margin-top: 20px;
+  }
+}

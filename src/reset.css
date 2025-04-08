@@ -1,14 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: #000000;
+  text-decoration: none;
+  color: #000000;
 }
 
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
 }

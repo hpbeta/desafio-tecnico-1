@@ -49,6 +49,13 @@
   .acordeon-section {
     margin: 30px auto;
   }
+
+  .container-sub-menu {
+    display: none;
+  }
+  .category {
+    display: none;
+  }
 }
 
 @media (max-width: 608px) {

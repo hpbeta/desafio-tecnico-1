@@ -75,7 +75,7 @@
   #hamburguer {
     position: absolute;
     top: 50px;
-    left: 0;
+    left: 20px;
     font-size: 25px;
   }
 
@@ -130,15 +130,14 @@
     span {
       font-size: 30px;
     }
-
-    
   }
   #hamburguer {
-    top: 120px;
+    top: 70px;
+    left: 20px;
   }
 
   .container-departament {
-    top: 160px;
+    top: 85px;
   }
   .container {
     flex-direction: column;
@@ -214,8 +213,7 @@
   }
 }
 
-
-@media(max-width: 393px) {
+@media (max-width: 393px) {
   #search-input {
     width: 250px;
     margin-left: 40px;

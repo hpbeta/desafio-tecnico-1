@@ -109,7 +109,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  
 }
 
 .container-links {
@@ -125,14 +124,14 @@
   margin: 20px 0 0 170px;
   position: absolute;
   width: 100%;
-  padding: 20px ;
+  padding: 20px;
   background-color: #ffffff;
   opacity: 0;
 }
 
 .container-sub-menu.hidden {
   opacity: 1;
-} 
+}
 
 .container-menu-hamburguer {
   display: flex;
@@ -149,7 +148,7 @@
 .category {
   position: absolute;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 20px;
   padding: 20px;
   width: 100%;
@@ -171,14 +170,13 @@
   margin-left: 350px;
 }
 
-
 .category-menu {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.category-menu a:hover{
+.category-menu a:hover {
   color: #005cff;
 }
 
@@ -191,7 +189,6 @@
 .container-category.hidden {
   opacity: 1;
 }
- 
 
 .sub-menu {
   display: flex;
@@ -204,8 +201,6 @@
   display: flex;
   gap: 50px;
 }
-
-
 
 .submenu-category {
   display: flex;
@@ -234,7 +229,7 @@
 
 .container-mug-info p {
   font-size: 25px;
-  color: #FFFFFF;
+  color: #ffffff;
   line-height: 35px;
 }
 .container-mug-info span {
@@ -249,7 +244,7 @@
   padding: 10px 0;
   background: none;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 105px;
 }
 
@@ -316,9 +311,9 @@
 
 .lancamentos {
   font-size: 20px;
- align-items: flex-start;
- width: 100%;
- margin-bottom: 19px;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 19px;
 }
 
 .carousel-container {

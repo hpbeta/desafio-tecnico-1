@@ -10,8 +10,6 @@ const departamentLinks = document.querySelectorAll(".departament-links");
 const subMenuContainer = document.querySelector(".container-sub-menu");
 const mediaQuery = window.matchMedia("(max-width: 608px)");
 
-
-
 departamentLinks.forEach((item) => {
   item.addEventListener("mouseenter", () => {
     const category = document.querySelector(".category");
@@ -31,16 +29,18 @@ subMenu.addEventListener("mouseenter", () => {
 });
 
 function toggleHamburguerMenu() {
-    
+  const overlay = document.querySelector(".overlay");
   iconHamburguer.addEventListener("click", () => {
-    const departamentContainer = document.querySelector(".container-departament")
-    departamentContainer.classList.toggle("show")
-    
-  }) 
+    const departamentContainer = document.querySelector(
+      ".container-departament"
+    );
+    departamentContainer.classList.toggle("show");
+    overlay.classList.toggle("show");
+  });
 }
 
-if(mediaQuery.matches) {
-  toggleHamburguerMenu()
+if (mediaQuery.matches) {
+  toggleHamburguerMenu();
 }
 
 function handleSearch() {
@@ -131,7 +131,6 @@ function initVerticalCarrosselButtons() {
 }
 
 search.addEventListener("click", handleSearch);
-
 
 initCarousels();
 initVerticalCarrosselButtons();

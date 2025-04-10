@@ -144,10 +144,11 @@
     margin-top: -10px;
 
     .container-mug {
-      width: 90%;
+      width: 100%;
 
       img {
         width: 250px;
+        margin-left: 100px;
       }
     }
 
@@ -156,14 +157,16 @@
     }
   }
   .mug-detail-container {
-    width: 350px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 20px;
   }
 
   .mug-detail-image {
     img {
-      width: 300px;
+      width: 470px;
+      height: 420px;
+      
     }
   }
 

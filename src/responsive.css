@@ -68,9 +68,34 @@
     max-width: 350px;
   }
 
-  .departament-links {
-    text-align: center;
-    width: 400px;
+  .hamburger-menu {
+    display: none;
+  }
+
+  #hamburguer {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    font-size: 25px;
+  }
+
+  .container-departament {
+    flex-direction: column;
+    position: absolute;
+    background-color: #ffffff;
+    padding: 20px;
+    left: 0;
+    top: 90px;
+    width: 200px;
+    opacity: 0;
+  }
+
+  .container-departament.show {
+    opacity: 1;
+  }
+
+  .departament-links a {
+    margin-bottom: 40px;
   }
 
   .section-hero {
@@ -135,7 +160,6 @@
     }
   }
 
-  
   .mug-detail-description {
     width: 350px;
     padding: 0 10px;
@@ -179,48 +203,5 @@
 
   .container-carrossel {
     justify-content: space-between;
-  }
-
-  .container-departament {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    width: 50vw;
-    height: 100vh;
-    background-color: #ffffff;
-    transform: translateY(100%);
-    opacity: 0;
-  }
-
-  .container-departament.active {
-    transform: translateY(0);
-    opacity: 1;
-  }
-
-  .departament-links {
-    flex-direction: column;
-    margin-top: -330px;
-    width: 100%;
-    a {
-      margin-bottom: 20px;
-    }
-  }
-
-  .hamburger-menu {
-    display: block;
-    position: absolute;
-    top: 65px;
-    z-index: 1;
-    cursor: pointer;
-  }
-}
-
-@media(max-width: 375px) {
-  .hamburger-menu {
-    top: 80px;
-  }
-
-  .departament-links {
-    margin-top: 20px;
   }
 }

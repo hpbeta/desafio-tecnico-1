@@ -8,6 +8,9 @@ const subMenu = document.querySelector(".sub-menu");
 const containerCategory = document.querySelector(".container-category");
 const departamentLinks = document.querySelectorAll(".departament-links");
 const subMenuContainer = document.querySelector(".container-sub-menu");
+const mediaQuery = window.matchMedia("(max-width: 608px)");
+
+
 
 departamentLinks.forEach((item) => {
   item.addEventListener("mouseenter", () => {
@@ -28,14 +31,16 @@ subMenu.addEventListener("mouseenter", () => {
 });
 
 function toggleHamburguerMenu() {
-  const containerDepartament = document.querySelector(".container-departament");
-  containerDepartament.classList.toggle("active");
+    
+  iconHamburguer.addEventListener("click", () => {
+    const departamentContainer = document.querySelector(".container-departament")
+    departamentContainer.classList.toggle("show")
+    
+  }) 
+}
 
-  document.body.style.backgroundColor = containerDepartament.classList.contains(
-    "active"
-  )
-    ? "rgba(0, 0, 0, 0.5)"
-    : "";
+if(mediaQuery.matches) {
+  toggleHamburguerMenu()
 }
 
 function handleSearch() {
@@ -126,7 +131,7 @@ function initVerticalCarrosselButtons() {
 }
 
 search.addEventListener("click", handleSearch);
-hamburguerMenu.addEventListener("click", toggleHamburguerMenu);
+
 
 initCarousels();
 initVerticalCarrosselButtons();

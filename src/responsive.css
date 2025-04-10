@@ -85,8 +85,8 @@
     background-color: #ffffff;
     padding: 20px;
     left: 0;
-    top: 90px;
-    width: 200px;
+    top: 60px;
+    width: 250px;
     opacity: 0;
   }
 
@@ -95,7 +95,7 @@
   }
 
   .departament-links a {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .section-hero {
@@ -130,8 +130,16 @@
     span {
       font-size: 30px;
     }
+
+    
+  }
+  #hamburguer {
+    top: 120px;
   }
 
+  .container-departament {
+    top: 160px;
+  }
   .container {
     flex-direction: column;
     margin-top: -10px;
@@ -203,5 +211,13 @@
 
   .container-carrossel {
     justify-content: space-between;
+  }
+}
+
+
+@media(max-width: 393px) {
+  #search-input {
+    width: 250px;
+    margin-left: 40px;
   }
 }

@@ -120,14 +120,24 @@
     width: 350px;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
 
+  .mug-detail-image {
     img {
-      width: 250px;
+      width: 300px;
     }
   }
 
+  
   .mug-detail-description {
     width: 350px;
+    padding: 0 10px;
+  }
+
+  .mug-detail-description img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
   }
 
   .contact-container {

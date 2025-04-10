@@ -3,6 +3,29 @@ import { products } from "../src/products.js";
 const search = document.querySelector(".search-icon");
 const btnCarrossel = document.querySelectorAll(".button-carrossel");
 const hamburguerMenu = document.querySelector(".hamburger-menu");
+const iconHamburguer = document.getElementById("hamburguer");
+const subMenu = document.querySelector(".sub-menu");
+const containerCategory = document.querySelector(".container-category");
+const departamentLinks = document.querySelectorAll(".departament-links");
+const subMenuContainer = document.querySelector(".container-sub-menu");
+
+departamentLinks.forEach((item) => {
+  item.addEventListener("mouseenter", () => {
+    const category = document.querySelector(".category");
+
+    category.classList.toggle("show");
+    subMenuContainer.classList.remove("hidden");
+  });
+});
+
+iconHamburguer.addEventListener("mouseenter", () => {
+  subMenuContainer.classList.toggle("hidden");
+  containerCategory.classList.remove("hidden");
+});
+
+subMenu.addEventListener("mouseenter", () => {
+  containerCategory.classList.add("hidden");
+});
 
 function toggleHamburguerMenu() {
   const containerDepartament = document.querySelector(".container-departament");

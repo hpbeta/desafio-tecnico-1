@@ -2,40 +2,44 @@ import { products } from "../src/products.js";
 
 const search = document.querySelector(".search-icon");
 const btnCarrossel = document.querySelectorAll(".button-carrossel");
-const hamburguerMenu = document.querySelector(".hamburger-menu");
 const iconHamburguer = document.getElementById("hamburguer");
-const subMenu = document.querySelector(".sub-menu");
-const containerCategory = document.querySelector(".container-category");
 const departamentLinks = document.querySelectorAll(".departament-links");
 const subMenuContainer = document.querySelector(".container-sub-menu");
 const mediaQuery = window.matchMedia("(max-width: 608px)");
+const category = document.querySelector(".category");
+const containerMenuHamburguer = document.querySelector(".container-menu-hamburguer")
 
+//quando passa o mouse em cima do departamento abre um sub-menu categoria
 departamentLinks.forEach((item) => {
   item.addEventListener("mouseenter", () => {
-    const category = document.querySelector(".category");
-
     category.classList.toggle("show");
-    subMenuContainer.classList.remove("hidden");
   });
+
+  //Aqui quando eu tiro o mouse de cima o sub menu some
+  item.addEventListener("mouseleave", () => {
+    category.classList.remove("show")
+  })
 });
 
-iconHamburguer.addEventListener("mouseenter", () => {
-  subMenuContainer.classList.toggle("hidden");
-  containerCategory.classList.remove("hidden");
+
+//Quando passa o mouse em cima do menu-hamburguer abre um submenu
+containerMenuHamburguer.addEventListener("mouseenter", () => {
+  subMenuContainer.classList.toggle("show");
 });
 
-subMenu.addEventListener("mouseenter", () => {
-  containerCategory.classList.add("hidden");
+//Quando tira o mouse o submenu sai
+containerMenuHamburguer.addEventListener("mouseleave", () => {
+  subMenuContainer.classList.remove("show");
 });
 
+
+//Aqui a função para o menu aparecer e desaparecer no mobile
 function toggleHamburguerMenu() {
-  const overlay = document.querySelector(".overlay");
   iconHamburguer.addEventListener("click", () => {
     const departamentContainer = document.querySelector(
       ".container-departament"
     );
     departamentContainer.classList.toggle("show");
-    overlay.classList.toggle("show");
   });
 }
 
@@ -43,6 +47,7 @@ if (mediaQuery.matches) {
   toggleHamburguerMenu();
 }
 
+//Função pra pegar o que foi digitado no input e mostrar na tela
 function handleSearch() {
   const inputValue = document.getElementById("search-input").value;
 

@@ -105,6 +105,15 @@
   color: #005cff;
   cursor: pointer;
 }
+
+.departament-style {
+  color: #005cff;
+}
+
+.category-style {
+  color: #005cff;
+}
+
 .hamburger-menu {
   display: flex;
   align-items: center;
@@ -129,7 +138,7 @@
   opacity: 0;
 }
 
-.container-sub-menu.hidden {
+.container-sub-menu.show {
   opacity: 1;
 }
 
@@ -161,13 +170,13 @@
 
 .category h1 {
   font-size: 16px;
-  margin: 0 0 20px 340px;
+  margin: 0 0 20px 140px;
 }
 
 .container-category-menu {
   display: flex;
   gap: 150px;
-  margin-left: 350px;
+  margin-left: 150px;
 }
 
 .category-menu {
@@ -183,11 +192,11 @@
 .container-category {
   display: flex;
   gap: 150px;
-  opacity: 0;
+  
 }
 
-.container-category.hidden {
-  opacity: 1;
+.category-style {
+  color: #005cff;
 }
 
 .sub-menu {

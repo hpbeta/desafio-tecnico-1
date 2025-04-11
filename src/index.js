@@ -7,31 +7,33 @@ const departamentLinks = document.querySelectorAll(".departament-links");
 const subMenuContainer = document.querySelector(".container-sub-menu");
 const mediaQuery = window.matchMedia("(max-width: 608px)");
 const category = document.querySelector(".category");
-const containerMenuHamburguer = document.querySelector(".container-menu-hamburguer")
+const containerMenuHamburguer = document.querySelector(
+  ".container-menu-hamburguer"
+);
 
-//quando passa o mouse em cima do departamento abre um sub-menu categoria
-departamentLinks.forEach((item) => {
-  item.addEventListener("mouseenter", () => {
-    category.classList.toggle("show");
+// Ativa o comportamento de exibir/esconder o submenu de categorias ao passar o mouse nos departamentos
+function handleDepartmentHover() {
+  departamentLinks.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      category.classList.toggle("show");
+    });
+
+    item.addEventListener("mouseleave", () => {
+      category.classList.remove("show");
+    });
+  });
+}
+
+// Exibe o submenu quando o mouse passa sobre o botão hamburguer
+function setupHamburguerMenuHover() {
+  containerMenuHamburguer.addEventListener("mouseenter", () => {
+    subMenuContainer.classList.toggle("show");
   });
 
-  //Aqui quando eu tiro o mouse de cima o sub menu some
-  item.addEventListener("mouseleave", () => {
-    category.classList.remove("show")
-  })
-});
-
-
-//Quando passa o mouse em cima do menu-hamburguer abre um submenu
-containerMenuHamburguer.addEventListener("mouseenter", () => {
-  subMenuContainer.classList.toggle("show");
-});
-
-//Quando tira o mouse o submenu sai
-containerMenuHamburguer.addEventListener("mouseleave", () => {
-  subMenuContainer.classList.remove("show");
-});
-
+  containerMenuHamburguer.addEventListener("mouseleave", () => {
+    subMenuContainer.classList.remove("show");
+  });
+}
 
 //Aqui a função para o menu aparecer e desaparecer no mobile
 function toggleHamburguerMenu() {
@@ -78,7 +80,7 @@ function initCarousels() {
         item.innerHTML = `
           <img src="${product.image}" alt="${product.name}" />
           <span>Novo</span>
-          <h3>${product.name}</h3>
+          <h3 class="product-name">${product.name}</h3>
           <div class="price-container">
             <div>
               <p class="price-line">${product.price}</p>
@@ -119,6 +121,8 @@ function initCarousels() {
   });
 }
 
+
+//Função para abrir e fechar o acordeon do footer
 function initVerticalCarrosselButtons() {
   btnCarrossel.forEach((btn, index) => {
     btn.addEventListener("click", () => {
@@ -136,6 +140,7 @@ function initVerticalCarrosselButtons() {
 }
 
 search.addEventListener("click", handleSearch);
-
+handleDepartmentHover();
+setupHamburguerMenuHover();
 initCarousels();
 initVerticalCarrosselButtons();

@@ -139,6 +139,11 @@
   .container-departament {
     top: 85px;
   }
+
+  .container-view-more a {
+    font-size: 12px;
+    width: 58px;
+  }
   .container {
     flex-direction: column;
     margin-top: -10px;

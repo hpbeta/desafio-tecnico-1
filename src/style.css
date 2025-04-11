@@ -63,15 +63,20 @@
   font-size: 23px;
 }
 
+.user, .shopping-cart {
+  width: 20px;
+}
+
 .user-container {
   display: flex;
   align-items: center;
   position: relative;
 }
 .user-container p {
-  margin-right: 20px;
+  margin: 0  20px 0 5px;
   font-size: 14px;
 }
+
 .icon-user {
   margin-right: 5px;
   color: #4d83dc;
@@ -130,6 +135,7 @@
 .hamburger-menu {
   font-weight: bold;
 }
+
 
 .container-sub-menu {
   display: flex;
@@ -326,6 +332,11 @@
   align-items: flex-start;
   width: 100%;
   margin-bottom: 19px;
+}
+
+.section-carrossel {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .carousel-container {

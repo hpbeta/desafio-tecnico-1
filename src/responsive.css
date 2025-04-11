@@ -164,8 +164,9 @@
 
   .mug-detail-image {
     img {
-      width: 470px;
+      width: 400px;
       height: 420px;
+      background-color: red;
       
     }
   }
@@ -207,11 +208,11 @@
     justify-content: space-between;
   }
 
-  .item-carrossel.hidden {
+  .item-acordeon.hidden {
     display: none;
   }
 
-  .container-carrossel {
+  .container-acordeon {
     justify-content: space-between;
   }
 }

@@ -712,16 +712,18 @@
   margin-left: 300px;
 }
 
-.container-carrossel {
+
+
+.container-acordeon {
   display: flex;
   gap: 5px;
 }
 
-.button-carrossel {
+.button-acordeon {
   border: none;
   height: 20px;
 }
 
-.button-carrossel.rotated {
+.button-acordeon.rotated {
   transform: rotate(90deg);
 }

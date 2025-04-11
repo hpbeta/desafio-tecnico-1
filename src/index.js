@@ -1,7 +1,7 @@
 import { products } from "../src/products.js";
 
 const search = document.querySelector(".search-icon");
-const btnCarrossel = document.querySelectorAll(".button-carrossel");
+const btnCarrossel = document.querySelectorAll(".button-acordeon");
 const iconHamburguer = document.getElementById("hamburguer");
 const departamentLinks = document.querySelectorAll(".departament-links");
 const subMenuContainer = document.querySelector(".container-sub-menu");
@@ -124,7 +124,7 @@ function initVerticalCarrosselButtons() {
     btn.addEventListener("click", () => {
       btn.classList.toggle("rotated");
 
-      const itemCarrossel = document.querySelectorAll(".item-carrossel");
+      const itemCarrossel = document.querySelectorAll(".item-acordeon");
 
       itemCarrossel.forEach((el, i) => {
         if (index === i) {

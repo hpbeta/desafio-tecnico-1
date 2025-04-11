@@ -111,12 +111,10 @@
   cursor: pointer;
 }
 
-.departament-style {
-  color: #005cff;
-}
 
-.category-style {
+.category-style, .departament-style {
   color: #005cff;
+  font-weight: bold;
 }
 
 .hamburger-menu {

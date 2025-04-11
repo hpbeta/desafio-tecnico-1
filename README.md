@@ -51,10 +51,10 @@ Você pode visualizar o projeto localmente de forma bem simples:
 ## 📸 Preview
 
 **Desktop**  
-<img src="./src/assets/desktop.gif" alt="Preview Desktop" width="100%" />
+<img src="./src/assets/avanti-desktop.gif" alt="Preview Desktop" width="100%" />
 
 **Mobile**  
-<img src="./src/assets/mobile.gif" alt="Preview Mobile" />
+<img src="./src/assets/avanti-mobile.gif" alt="Preview Mobile" />
 
 ---
 

@@ -11,17 +11,18 @@ const containerMenuHamburguer = document.querySelector(
   ".container-menu-hamburguer"
 );
 
-// Ativa o comportamento de exibir/esconder o submenu de categorias ao passar o mouse nos departamentos
-function handleDepartmentHover() {
-  departamentLinks.forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-      category.classList.toggle("show");
-    });
+//Função pra pegar o que foi digitado no input e mostrar na tela
+function handleSearch() {
+  const inputValue = document.getElementById("search-input").value;
 
-    item.addEventListener("mouseleave", () => {
-      category.classList.remove("show");
-    });
-  });
+  if (inputValue === "") {
+    alert("Digite o que você procura");
+    return;
+  }
+
+  const paragraph = document.querySelector(".search-text");
+  paragraph.innerHTML = `Você digitou: ${inputValue}`;
+  document.getElementById("search-input").value = "";
 }
 
 // Exibe o submenu quando o mouse passa sobre o botão hamburguer
@@ -32,6 +33,19 @@ function setupHamburguerMenuHover() {
 
   containerMenuHamburguer.addEventListener("mouseleave", () => {
     subMenuContainer.classList.remove("show");
+  });
+}
+
+// Ativa o comportamento de exibir/esconder o submenu de categorias ao passar o mouse nos departamentos
+function handleDepartmentHover() {
+  departamentLinks.forEach((item) => {
+    item.addEventListener("mouseenter", () => {
+      category.classList.toggle("show");
+    });
+
+    item.addEventListener("mouseleave", () => {
+      category.classList.remove("show");
+    });
   });
 }
 
@@ -49,19 +63,7 @@ if (mediaQuery.matches) {
   toggleHamburguerMenu();
 }
 
-//Função pra pegar o que foi digitado no input e mostrar na tela
-function handleSearch() {
-  const inputValue = document.getElementById("search-input").value;
-
-  if (inputValue === "") {
-    alert("Digite o que você procura");
-    return;
-  }
-
-  const paragraph = document.querySelector(".search-text");
-  paragraph.innerHTML = `Você digitou: ${inputValue}`;
-  document.getElementById("search-input").value = "";
-}
+//Função do carrossel
 
 function initCarousels() {
   document.querySelectorAll(".carousel-container").forEach((container) => {
@@ -120,7 +122,6 @@ function initCarousels() {
     renderProducts();
   });
 }
-
 
 //Função para abrir e fechar o acordeon do footer
 function initVerticalCarrosselButtons() {

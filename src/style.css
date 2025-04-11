@@ -725,8 +725,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin: 40px 0;
+}
+
+.group-logos img {
+  width: 59px;
+  
 }
 
 .accordion-btn {
@@ -746,6 +751,18 @@
 .container-acordeon {
   display: flex;
   gap: 5px;
+}
+
+.item-acordeon li a  {
+  
+  font-size: 12px;
+  color: #303030;
+}
+
+.item-acordeon p, h6  {
+  
+  font-size: 12px;
+  color: #303030;
 }
 
 .button-acordeon {

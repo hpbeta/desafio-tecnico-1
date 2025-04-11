@@ -144,6 +144,7 @@
   padding: 20px;
   background-color: #ffffff;
   opacity: 0;
+ 
 }
 
 .container-sub-menu.show {
@@ -262,6 +263,7 @@
   border-radius: 10px;
   color: #ffffff;
   width: 105px;
+  text-transform: uppercase;
 }
 
 .container-main {
@@ -358,6 +360,10 @@
   align-items: center;
 }
 
+.seta {
+    transform: scaleX(-1); /* inverte horizontalmente */
+}
+
 .carousel {
   display: flex;
   gap: 20px;
@@ -443,21 +449,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   border: none;
-  padding: 10px 14px;
   font-size: 18px;
   cursor: pointer;
-  border-radius: 50%;
   z-index: 1;
   transition: background 0.2s;
+  background: none;
 }
 
-.prevBtn:hover,
-.nextBtn:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
 
 .prevBtn {
   left: 10px;
@@ -466,6 +466,7 @@
 .nextBtn {
   right: 10px;
 }
+
 
 .buy-button {
   padding: 10px;

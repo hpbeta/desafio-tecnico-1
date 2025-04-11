@@ -84,7 +84,7 @@ function initCarousels() {
           <div class="price-container">
             <div>
               <p class="price-line">${product.price}</p>
-              <p>${product.discount}</p>
+              <p class="discount">${product.discount}</p>
             </div>
             <p class="offer">${product.offer}</p>
           </div>

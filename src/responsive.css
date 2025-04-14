@@ -79,6 +79,16 @@
     font-size: 25px;
   }
 
+  .container-user {
+    display: none;
+  }
+
+  .container-shopping-cart {
+    position: absolute;
+    bottom: 96px;
+    left: 150px;
+  }
+
   .container-departament {
     flex-direction: column;
     position: absolute;
@@ -99,7 +109,9 @@
   }
 
   .section-hero {
+    
     padding: 10px;
+    margin-top: -70px;
     img {
       width: 400px;
     }

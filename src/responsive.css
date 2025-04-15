@@ -158,6 +158,10 @@
       font-size: 32px ;
     }
   }
+  .container-description .mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
   .container-description .text-desktop {
     display: none;
@@ -232,6 +236,8 @@
       width: 85%;
     }
   }
+
+ 
   .mug-detail-container {
     width: 100%;
     margin: 0 auto;

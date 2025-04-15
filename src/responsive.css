@@ -97,12 +97,12 @@
     left: 0;
     top: 60px;
     width: 250px;
-    opacity: 0;
+    display: none;
     z-index: 9999;
   }
 
   .container-departament.show {
-    opacity: 1;
+   display: block;
   }
 
   .departament-links a {

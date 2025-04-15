@@ -180,7 +180,8 @@
   }
 
   .container-main img {
-    max-width: 225px;
+    max-width: 235px;
+    height: 245px;
   }
   .sale-header {
     width: 139px;

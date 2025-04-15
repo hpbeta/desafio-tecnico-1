@@ -56,6 +56,9 @@ function toggleHamburguerMenu() {
     const departamentContainer = document.querySelector(".container-departament" );
     departamentContainer.classList.toggle("show");
     overlay.classList.toggle("hidden")
+
+    iconHamburguer.classList.toggle("fa-bars");
+    iconHamburguer.classList.toggle("fa-times");
   });
 }
 

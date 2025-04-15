@@ -20,6 +20,8 @@
     .container-description {
       width: 85%;
     }
+
+    
   }
   .mug-detail-container {
     flex-direction: column-reverse;
@@ -127,6 +129,10 @@
   .container-info {
     width: 600px;
   }
+
+  .section-carrossel.mobile {
+    display: none;
+  }
   
 }
 
@@ -151,6 +157,13 @@
     .sale {
       font-size: 32px ;
     }
+  }
+
+  .container-description .text-desktop {
+    display: none;
+  }
+  .container-description .text-mobile {
+    display: block;
   }
 
   .sale-header {

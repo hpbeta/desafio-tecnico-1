@@ -556,9 +556,16 @@ width: 142px;
   width: 487px;
 }
 
-.container-description p {
+.container-description .text-desktop {
   margin: 20px 0;
+  display: block;
 }
+.container-description .text-mobile {
+  margin: 20px 0;
+  display: none;
+}
+
+
 .container-description h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -836,3 +843,5 @@ h6 {
 .overlay.hidden {
   display: block;
 }
+
+

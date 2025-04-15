@@ -168,6 +168,7 @@
   
   width: 26px;
   margin-top: -4px;
+  z-index: 999999;
 }
 
 .container-menu-hamburguer:hover {
@@ -816,4 +817,18 @@ h6 {
 
 .button-acordeon.rotated {
   transform: rotate(90deg);
+}
+
+.overlay {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.9;
+  z-index: 999;
+  display: none;
+}
+
+.overlay.hidden {
+  display: block;
 }

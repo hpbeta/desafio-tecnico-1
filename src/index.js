@@ -52,10 +52,10 @@ function handleDepartmentHover() {
 //Aqui a função para o menu aparecer e desaparecer no mobile
 function toggleHamburguerMenu() {
   iconHamburguer.addEventListener("click", () => {
-    const departamentContainer = document.querySelector(
-      ".container-departament"
-    );
+    const overlay = document.querySelector(".overlay")
+    const departamentContainer = document.querySelector(".container-departament" );
     departamentContainer.classList.toggle("show");
+    overlay.classList.toggle("hidden")
   });
 }
 

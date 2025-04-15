@@ -92,9 +92,9 @@
 }
 .count {
   position: absolute;
-  top: 0;
+  top: 0px;
   right: -5px;
-  background-color: #1100ff;
+  background-color: #005CFF;
   color: white;
   font-size: 8px;
   font-weight: bold;
@@ -302,13 +302,22 @@
   font-weight: lighter;
 }
 
-.sale-header p {
+.sale-header .title-desktop {
   text-transform: uppercase;
   color: #005cff;
   letter-spacing: 5px;
   font-weight: 600;
   font-size: 25px;
   margin-bottom: 12px;
+}
+
+.title-mobile{
+display: none;
+letter-spacing: 0;
+font-weight: bold;
+color: #005cff;
+font-size: 12px;
+width: 142px;
 }
 
 .sale {

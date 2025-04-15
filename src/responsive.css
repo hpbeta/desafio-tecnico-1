@@ -7,10 +7,10 @@
     flex-direction: column;
   }
 
+
   .container-main {
     flex-direction: column;
   }
-
   .container {
     flex-direction: column;
     margin-top: -10px;
@@ -132,17 +132,62 @@
 }
 
 @media (max-width: 480px) {
+
+  .count {
+    top: -5px;
+   
+  }
   .section-hero {
     padding: 10px;
-    img {
-      width: 300px;
+  
+
+    h1 
+    {
+      font-size: 40px;
+      line-height: 40px;
     }
 
-    h1,
-    p,
-    span {
-      font-size: 30px;
+    p {
+      font-size: 12px;
     }
+
+    .sale {
+      font-size: 32px ;
+    }
+  }
+
+  .sale-header {
+    gap: 10px;
+  }
+
+  .container-main {
+    width: 400px;
+    height: 250px;
+    margin: 10px auto;
+  }
+
+  .title-mobile{
+    display: block;
+  }
+
+  .title-desktop{
+    display: none;
+  }
+  
+  .container-main {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .container-main img {
+    max-width: 225px;
+  }
+  .sale-header {
+    width: 139px;
+  }
+  .sale-header h1 {
+    font-size: 40px;
+    
   }
   #hamburguer {
     top: 70px;
@@ -200,9 +245,14 @@
 
   .contact-container {
     margin-top: -10px;
+    max-width: 390px;
     p {
       font-size: 12px;
       padding: 20px 0;
+     
+    }
+    img {
+      height: 319px;
     }
   }
 
@@ -247,7 +297,7 @@
   }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 396px) {
   #search-input {
     width: 250px;
     margin-left: 40px;
@@ -255,5 +305,11 @@
 
   .search-icon {
     right: 67px;
+  }
+
+  .container-main {
+    width: 380px;
+    padding: 30px 0;
+    margin: 10px auto;
   }
 }

@@ -244,8 +244,9 @@
   }
 
   .contact-container {
-    margin-top: -10px;
+    
     max-width: 390px;
+    margin: 10px auto;
     p {
       font-size: 12px;
       padding: 20px 0;

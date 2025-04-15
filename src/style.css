@@ -283,9 +283,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #e7e7ea;
+  background-color: #e8e9eb;
   margin-top: 18px;
   text-transform: uppercase;
+}
+
+.container-main img {
+  width: 655px;
 }
 
 .sale-header {

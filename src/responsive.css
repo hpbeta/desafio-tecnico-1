@@ -137,9 +137,7 @@
    
   }
   .section-hero {
-    padding: 10px;
-  
-
+    
     h1 
     {
       font-size: 40px;
@@ -181,7 +179,8 @@
 
   .container-main img {
     max-width: 235px;
-    height: 245px;
+    height: 235px;
+    background: transparent;
   }
   .sale-header {
     width: 139px;
@@ -274,6 +273,10 @@
   .installments {
 
     font-size: 12px;
+  }
+
+  .button {
+    width: 300px;
   }
 
   .acordeon-section {

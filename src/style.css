@@ -754,6 +754,10 @@
   color: #303030;
 }
 
+.text-mobile {
+  display: none;
+}
+
 .group-logos {
   display: flex;
   align-items: center;

@@ -128,6 +128,7 @@
   .container-info {
     width: 600px;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -229,6 +230,20 @@
 
   .container-acordeon {
     justify-content: space-between;
+  }
+
+  .text-desktop {
+    display: none;
+  }
+
+  .text-mobile {
+    display: block;
+    width: 358px;
+  }
+
+  .payment-section {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 
